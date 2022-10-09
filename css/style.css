@@ -6,7 +6,7 @@
 }
 .hero{
 	display: flex;
-	height: 70vh;
+	height: 100vh;
 	width: auto;
 	background-image: url(icemelting.jpg);
 	background-color: black;
@@ -37,10 +37,15 @@ span{
 
 .column_chart {
 	padding-top: 30px;
-	width:60%;
+	width: 50%;
 	padding-left: 30px;
+	padding-right: 30px;
 	
-	
+}
+.column_chart2 {
+	padding-top: 30px;
+	width:45%;
+	padding-right: 30px;
 }
 .annotation {
     font-family: 'Century Gothic', sans-serif;
@@ -50,7 +55,10 @@ span{
     font-size: 20px;
     text-align: center;
 }
-
+.column_pie {
+	padding-top: 30px;
+	width:100%;
+}
 nav ul li{
 	list-style-type: none;
 	display: inline-block;

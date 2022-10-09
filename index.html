@@ -43,9 +43,17 @@
 		
 		<div  class = "column_list"> 
 			<div id="vis1" class = "column_chart"></div>
+			
 			<div class = "column_chart" > 
 				<h3 class = "annotation" >Global temperature</h3>
-				<p class = "body"> temperature increases </p>
+				<p class = "body"> Global warming is Temperature increases over the globe in surface air and sea surface combined.</p>
+				<p class = "body"> In many regions and seasons, the average temperature has already been warmer than the global average, with land experiencing a higher average temperature than the ocean nowadays.</p>
+				<p class = "body"> As temperatures increase by 1°C, runoff areas and flood hazards will expand. Human need to realise the climate-related risks.
+					Therefore, we can migitate the serious global warming as soon as possible. 
+				</p>
+				<p class = "body"> From the graph, it illustrates 0 is the earth's average temperature. During the mid-20th century, the atmosphere was dominated by sulphate aerosols, which contributed to the temperature dropping. The earth's temperature has been reaching the top temperature after 1980. Especially,
+					Since the "clean air acts" has introducted to Eurpoe and America so they reduce emission of sulphate aerosols.
+					The steadily rising levels of greenhouse gases soon overweighed the cooling effect in the atmosphere.</p>
 			</div>
 		</div>
 	</div>
@@ -53,30 +61,33 @@
 
 <div id="explain">
 	<div class = "explain">
+		<div  class="title" style="text-align: center">
+			<h2>What factors <span>increase</span> the temperature?</h2>
+		</div>
 		<div class="box">
 			<div class="card">
-				<i class="fas fa-bars" ></i>
-				<h5 id= furnture_assembly_tag>content</h5>
+				<i class="fas fa-car-alt" ></i>
+				<h5 id= furnture_assembly_tag>Transportation</h5>
 				<div class="pra" >
-					<p id = pra_tag>Providing something</p>
+					<p id = pra_tag>In Denmark, 41,000 tons of CO2 were produced during the 11-day international climate change conference mainly produced by Transportation.</p>
 
 					</p>
 				</div>
 			</div>
 
 			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>content</h5>
+				<i class="fas fa-fire-alt"></i>
+				<h5>Burning fossil fuels </h5>
 				<div class="pra" >
-					<p id = pra_tag_tutor>They help students to improve their grades, understand difficult concepts, receive extra help to catch up with classroom lessons.</p>
+					<p id = pra_tag_tutor>Carbon dioxide (CO2) is released when fossil fuels are burned, and coal releases twice as much gas as petroleum.</p>
 
 				</div>
 			</div>
 			<div class="card">
 				<i class="far fa-building"></i>
-				<h5>content</h5>
+				<h5> Industrial manufacturing</h5>
 				<div class="pra" >
-					<p id = pra_tag_tutor>They help students to improve their grades, understand difficult concepts, receive extra help to catch up with classroom lessons.</p>
+					<p id = pra_tag_tutor>A large part of this pollution comes from the manufacturing of iron and steel, as well as the production of cement.</p>
 
 				</div>
 			</div>
@@ -87,21 +98,42 @@
 <div  id = "service">
 	<div class="service">
 		<div  class="title">
-			<h2>Global warming of <span>1ºC</span></h2>
-		</div>
+			<h2>Co2 emission from 1990 to 2019<h/2>
 		
 		<div  class = "column_list"> 
-			<div id="vis2" class = "column_chart"></div>
-			<div class = "column_chart" > 
-				<h3 class = "annotation" >Co2 emission</h3>
-				<p class = "body"> temperature increases </p>
+			<div id="vis2" class = "column_chart2" style="padding-left: 0px" ></div>
+			
+			<div class = "column_chart2" > 
+				<h3 class = "annotation" >Co2 emission over years</h3>
+				<p class = "body" style="padding-top: 30px;padding-bottom: 30px;"> Global climate change is primarily caused by carbon dioxide emissions. Over the years, CO2 emission has been an upward trend. A <span>90% </span>increase in CO2 emissions has occurred since 1970.
+				Emissions must be reduced <span>urgently</span>. However, it is different for the world to decide how to share this responsibility to everyone</p>
+
+				<h3 class = "annotation" >The contributors of CO2</h3>
+				<div id="vis4" class = "column_pie"></div>
+				
+				<p class = "body"> China contributes close to <span>a third </span>of all CO2 emissions globally. Since China has becomes 
+				the industry for all over the world. Hence, the greenhouse emission has been intensified by the 
+				China's rapid urbanization boom. <span>6 countries has produced 58% of global emissions </span> </p>
 			</div>
 		</div>
 	</div>
 </div>
 
+<div  id = "service">
+	<div class="service">
+		<div  class="title">
+			<h2>Global CO2 emissions from fossil fuels<h/2>
+		
+		<div  class = "column_list"> 
+			<div class = "column_chart" > 
+				<h3 class = "annotation" >fossil fuels</h3>
+				<p class = "body"> temperature increases </p>
+			</div>
+			<div id="vis3" class = "column_chart"></div>
 
-
+		</div>
+	</div>
+</div>
 
 
 </div>
@@ -123,10 +155,16 @@
 
 	var spec1 = "js/Histogram.vg.json";
 	var spec2 = "js/choropleth_mapCo2.vg.json";
+	var spec3 = "js/choropleth_mapfossil.vg.json";
+	var spec4 = "js/radial.vg.json";
+
 
 	vegaEmbed('#vis1', spec1).then(function(result) {
 	}).catch(console.error);
 	vegaEmbed('#vis2', spec2).then(function(result) {
 	}).catch(console.error);
-
+	vegaEmbed('#vis3', spec3).then(function(result) {
+	}).catch(console.error);
+	vegaEmbed('#vis4', spec4).then(function(result) {
+	}).catch(console.error);
 </script>

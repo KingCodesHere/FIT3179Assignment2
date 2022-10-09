@@ -1,6 +1,6 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/temperature_change.csv"},
-    "height" :400,
+    "height" :600,
     "width" :"container",
     "config": {
       "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":20,"labelLimit": 0},
