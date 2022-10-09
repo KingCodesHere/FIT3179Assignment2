@@ -95,7 +95,7 @@
                 "domain": [0, 4],
                 "scheme": "reds"
             },
-            "legend": {"format": ".2s"}
+            "legend": {"format": ".2s","orient": "top"}
           },
           "tooltip": [
               {"field": "Country", "title": "Country"},

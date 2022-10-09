@@ -5,9 +5,10 @@
 	box-sizing: border-box;
 }
 .hero{
-	height: 90vh;
-	width: 100%;
-	background-image: url(../img/desktopflinder.jpg);
+	display: flex;
+	height: 70vh;
+	width: auto;
+	background-image: url(icemelting.jpg);
 	background-color: black;
 	background-size: cover;
 	background-position: center;
@@ -22,12 +23,32 @@ nav{
 }
 .logo{
 	color: rgb(255, 255, 255);
-	font-size: 35px;
-	letter-spacing: 1px;
-	cursor: pointer;
+	font-size: 40px;
+	letter-spacing: 2px;
 }
 span{
 	color: #f9004d;
+}
+
+.column_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column_chart {
+	padding-top: 30px;
+	width:60%;
+	padding-left: 30px;
+	
+	
+}
+.annotation {
+    font-family: 'Century Gothic', sans-serif;
+    color: #e0f0e3;
+    background: #f9004d;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
 }
 
 nav ul li{
@@ -55,20 +76,37 @@ h1{
 	font-size: 75px;
 }
 
+h3{
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 35px;
+}
 
-
+.body {
+	font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+	padding-top: 10px;
+	font-size: 25px;
+}
 
 .service{
 	background: #101010;
 	width: 100%;
 	padding: 100px 0px;
 }
+.explain{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
 .title h2{
 	color: white;
-	font-size: 75px;
-	width: 1130px;
+	font-size: 45px;
+	width: 100%;
 	margin: 30px auto;
-	text-align: center;
+	padding-left: 30px;
+	
 }
 .box{
 	display: flex;

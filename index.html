@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>website</title>
+	<title>Global warming</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,12 +22,12 @@
 </head>
 <body>
 
-
-	<header class="hero header">
+	<title> Global warming is now! </title>
+	<header class="hero">
 		<nav class="navbar">
 			<ul>
-				<li><a href="index.html" class="logo">world <span>!<span></a></li>
-				</ul>
+				<li><a class="logo"> Global <span>warming</span> is Now !</li>
+			</ul>
 				
         </nav>
 
@@ -36,12 +36,23 @@
 	</header>
 	
 <div  id = "service">
-
 	<div class="service">
 		<div  class="title">
-			<h2>Second graph</h2>
+			<h2>Global warming of <span>1ºC</span></h2>
 		</div>
+		
+		<div  class = "column_list"> 
+			<div id="vis1" class = "column_chart"></div>
+			<div class = "column_chart" > 
+				<h3 class = "annotation" >Global temperature</h3>
+				<p class = "body"> temperature increases </p>
+			</div>
+		</div>
+	</div>
+</div>
 
+<div id="explain">
+	<div class = "explain">
 		<div class="box">
 			<div class="card">
 				<i class="fas fa-bars" ></i>
@@ -73,7 +84,27 @@
 	</div>
 </div>
 
+<div  id = "service">
+	<div class="service">
+		<div  class="title">
+			<h2>Global warming of <span>1ºC</span></h2>
+		</div>
+		
+		<div  class = "column_list"> 
+			<div id="vis2" class = "column_chart"></div>
+			<div class = "column_chart" > 
+				<h3 class = "annotation" >Co2 emission</h3>
+				<p class = "body"> temperature increases </p>
+			</div>
+		</div>
+	</div>
+</div>
 
+
+
+
+
+</div>
 	<footer id = "contact" class="footer">
 
 			<div class="social__media--wrap">
@@ -87,3 +118,15 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+	var spec1 = "js/Histogram.vg.json";
+	var spec2 = "js/choropleth_mapCo2.vg.json";
+
+	vegaEmbed('#vis1', spec1).then(function(result) {
+	}).catch(console.error);
+	vegaEmbed('#vis2', spec2).then(function(result) {
+	}).catch(console.error);
+
+</script>
