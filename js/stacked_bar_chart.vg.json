@@ -4,6 +4,7 @@
   "data": {"url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/modern-renewable-energy-consumption.csv"},
   "config": {
     "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":15,"labelLimit": 0},
+    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":16,"titleFontSize":16,"labelLimit": 0,"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
     "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
   },
@@ -19,8 +20,7 @@
     },
     "color": {
       "field": "Energy type",
-      "type": "nominal",
-      "legend":null
+      "type": "nominal"
     },
     "tooltip":[
       {"field":"Energy type"},
