@@ -5,6 +5,12 @@
     "fontSize":19},
     "width": "container",
     "height": 500,
+    "config": {
+      "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":20,"labelLimit": 0},
+      "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":16,"titleFontSize":16,"labelLimit": 0},
+      "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
+      "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
+    },
     "data": {
       "url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/js/ne_110m_admin_0_countries.json",
       "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}

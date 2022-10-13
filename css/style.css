@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	box-sizing: border-box;
 }
 .hero{
@@ -54,7 +54,6 @@ span{
 	padding-right: 30px;
 }
 .annotation {
-    font-family: 'Josefin Sans', sans-serif;
     color: #e0f0e3;
     background: #f9004d;
     padding: 15px;
@@ -93,12 +92,10 @@ h1{
 
 h3{
 	color: white;
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 35px;
 }
 
 .body {
-	font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
     text-justify: inter-word;
 	padding-top: 10px;
@@ -121,7 +118,7 @@ h3{
 	font-size: 45px;
 	width: 100%;
 	margin: 30px auto;
-	padding-left: 30px;
+	padding-left: 2%;
 	
 }
 .box{
