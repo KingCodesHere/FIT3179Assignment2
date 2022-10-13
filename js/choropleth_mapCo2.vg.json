@@ -139,10 +139,9 @@
             "x": {"field": "year", "type": "temporal", "axis": {"grid": false}, "title": "Year"},
             "y": {"aggregate": "sum", "field": "Value_million", "type": "quantitative", "title": "CO2 emissions(million ton)", "axis": {"format": ".2s"}
             },
-              "tooltip": [
-              {"field": "Country", "title": "Country"},
-              {"field": "Value", "format": ",", "title": "CO2 emissions (kt)"},
-              {"field": "year", "title": "Year", "type": "temporal", "timeUnit": "year"}
+            "tooltip": [
+              {"aggregate": "sum", "field": "Value_million", "format": ",", "title": "CO2 emissions (kt)"},
+              {"field": "year", "title": "Year", "timeUnit": "year"}
             ]
           }
         },
