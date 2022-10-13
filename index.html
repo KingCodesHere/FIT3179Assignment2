@@ -194,7 +194,28 @@
 		</div>
 	</div>
 </div>
+<hr>
+<div  id = "service">
+	<div class="service">
+		<div  class="title">
+			<h2>Renewable energy</h2>
+		</div>
+		
+		<div  class = "column_list"> 
+			<div id="vis5" class = "column_chart"></div>
+			
+			<div class = "text" > 
+				<h3 class = "annotation" >Renewable energy production</h3>
+				<p class = "body"> As the Global warming issue has been more and more serious, lot of countries and conmpany starts to use renewable energy.</p>
+				<p class = "body"> In many regions and countries, they have regulated new laws to protect the enviroment and limit from generating energy by buring fossil fuel.
+					Therefore, the <span>renewable energy generate has been more and more popular. </span>
+				</p>
 
+				<p class = "body"> From the graph, it illustrates that renewable energy generation has been<span>increasing.</span></p>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 	<footer id = "contact" class="footer">
 
@@ -216,7 +237,7 @@
 	var spec2 = "js/choropleth_mapCo2.vg.json";
 	var spec3 = "js/choropleth_mapfossil.vg.json";
 	var spec4 = "js/donut.vg.json";
-
+	var spec5 = "js/stacked_bar_chart.vg.json"
 
 	vegaEmbed('#vis1', spec1).then(function(result) {
 	}).catch(console.error);
@@ -225,5 +246,7 @@
 	vegaEmbed('#vis3', spec3).then(function(result) {
 	}).catch(console.error);
 	vegaEmbed('#vis4', spec4).then(function(result) {
+	}).catch(console.error);
+	vegaEmbed('#vis5', spec5).then(function(result) {
 	}).catch(console.error);
 </script>

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container", "height": 700,
+  "data": {"url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/modern-renewable-energy-consumption.csv"},
+  "config": {
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":15,"labelLimit": 0},
+    "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
+    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
+  },
+  "title":"Renewable energy generation",
+  "mark": "area",
+  "encoding": {
+    "x": {
+        "timeUnit": "year", "field": "year_f",
+         "axis": {"format": "%Y", "grid": false},
+         "title":"years"},
+   "y": {
+      "field": "Value","type": "quantitative", "scale": { "domain": [0, 8000] },"title": "Sum of energy (terawatt)", "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "Energy type",
+      "type": "nominal",
+      "legend":null
+    },
+    "tooltip":[
+      {"field":"Energy type"},
+      {"field":"Value", "title":"Terawatt-hours"},
+      {"field":"year_f", "title":"Year","type": "temporal", "timeUnit": "year"}
+    ]
+  }
+}
