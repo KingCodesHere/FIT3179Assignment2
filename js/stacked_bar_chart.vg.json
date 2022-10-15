@@ -14,7 +14,7 @@
     "x": {
         "timeUnit": "year", "field": "year_f",
          "axis": {"format": "%Y", "grid": false},
-         "title":"years","scale":"10"},
+         "title":"years"},
    "y": {
       "field": "Value","type": "quantitative", "scale": { "domain": [0, 8000] },"title": "energy(terawatt)", "axis": {"format": ".2s"}
     },
