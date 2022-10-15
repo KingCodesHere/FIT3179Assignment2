@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": "container", "height": 700,
+  "width": "container", "height":500,
   "data": {"url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/modern-renewable-energy-consumption.csv"},
   "config": {
-    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":15,"labelLimit": 0},
-    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":16,"titleFontSize":16,"labelLimit": 0,"orient": "bottom", "layout": {"bottom": {"anchor": "middle"}}},
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"minExtent": 40},
+    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12, "orient": "bottom", "layout": {"bottom": {"anchor": "middle"}},"symbolStrokeWidth":40},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
     "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
   },
@@ -14,9 +14,9 @@
     "x": {
         "timeUnit": "year", "field": "year_f",
          "axis": {"format": "%Y", "grid": false},
-         "title":"years"},
+         "title":"years","scale":"10"},
    "y": {
-      "field": "Value","type": "quantitative", "scale": { "domain": [0, 8000] },"title": "Sum of energy (terawatt)", "axis": {"format": ".2s"}
+      "field": "Value","type": "quantitative", "scale": { "domain": [0, 8000] },"title": "energy(terawatt)", "axis": {"format": ".2s"}
     },
     "color": {
       "field": "Energy type",
@@ -24,7 +24,7 @@
     },
     "tooltip":[
       {"field":"Energy type"},
-      {"field":"Value", "title":"Terawatt-hours"},
+      {"field":"Value", "title":"Terawatt-hours", "format":".4s"},
       {"field":"year_f", "title":"Year","type": "temporal", "timeUnit": "year"}
     ]
   }

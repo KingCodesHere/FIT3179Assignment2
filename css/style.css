@@ -36,22 +36,23 @@ span{
 
 .column_chart {
 	padding-top: 30px;
-	width: 70%;
+	width: 65%;
 	padding-left: 2%;
 	padding-right: 2%;
 	
 }
 .text{
 	padding-top: 30px;
-	width: 30%;
+	width: 35%;
 	padding-left: 2%;
 	padding-right: 2%;
 	
 }
 .column_chart2 {
 	padding-top: 30px;
-	width:50%;
-	padding-right: 30px;
+	width: 57%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 .annotation {
     color: #e0f0e3;
@@ -197,7 +198,7 @@ footer{
 
 
 
-@media only screen and (max-width: 1334px) {
+@media only screen and (max-width: 1000px) {
 
     .nav-menu {
         position: fixed;

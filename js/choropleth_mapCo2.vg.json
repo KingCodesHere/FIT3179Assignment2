@@ -4,8 +4,8 @@
   "url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/API_EN.ATM.CO2E.KT_DS2_en_csv_v2_4577283.csv"
   },
   "config": {
-    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":15,"titleFontSize":20,"labelLimit": 0},
-    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":16,"titleFontSize":16,"labelLimit": 0},
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 40},
+    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
     "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
   },
@@ -27,7 +27,7 @@
   "vconcat":[
   {
     "width": "container",
-    "height": 600,
+    "height": 500,
     "title": "CO2 emissions (kt)",
     "projection": {"type": "equalEarth"},
     "layer": [
@@ -122,7 +122,7 @@
   },
    {
       "width": "container",
-      "height": 300,
+      "height": 200,
       "layer": [
         {
           "mark": {
