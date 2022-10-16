@@ -160,6 +160,11 @@ h5{
 	margin-bottom: 25px;
 }
 
+.text p{
+	line-height: 27px;
+	margin-bottom: 10px;
+	word-spacing: *px
+}
 
 footer{
 	position: relative;
