@@ -4,10 +4,13 @@
   "url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/API_EN.ATM.CO2E.KT_DS2_en_csv_v2_4577283.csv"
   },
   "config": {
-    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 40},
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 50},
     "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
-    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
+    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20},"background": "#14110F",
+    "view": {"stroke": "transparent"},
+    "title": {"color": "white"},
+    "style": {"guide-label": {"fill": "#fff"}, "guide-title": {"fill": "#fff"}}
   },
   
   "params": [
@@ -140,7 +143,7 @@
             "y": {"aggregate": "sum", "field": "Value_million", "type": "quantitative", "title": "CO2 emissions(million ton)", "axis": {"format": ".2s"}
             },
             "tooltip": [
-              {"aggregate": "sum", "field": "Value_million", "format": ",", "title": "CO2 emissions (kt)"},
+              {"aggregate": "sum", "field": "Value_million", "format": ",", "title": "CO2 emissions (kt)","format": ".4s"},
               {"field": "year", "title": "Year", "timeUnit": "year"}
             ]
           }
