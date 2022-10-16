@@ -1,16 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-  "url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/API_EN.ATM.CO2E.KT_DS2_en_csv_v2_4577283.csv"
+  "url": "https://raw.githubusercontent.com/KingCodesHere/FIT3179Assignment2/main/Data/co2emission.csv"
   },
   "config": {
     "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 50},
-    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0},
+    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0, "orient": "bottom", "layout": {"bottom": {"anchor": "middle"}},"symbolStrokeWidth":40},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
-    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20},"background": "#14110F",
+    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20,"color": "white"},"background": "#101010",
     "view": {"stroke": "transparent"},
-    "title": {"color": "white"},
-    "style": {"guide-label": {"fill": "#fff"}, "guide-title": {"fill": "#fff"}}
+    "axisX": {"gridWidth": 0.2},
+    "axisY": {"gridWidth": 0.2},
+    "style": {"guide-label": {"fill": "white"}, "guide-title": {"fill": "white"}}
   },
   
   "params": [

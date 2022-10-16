@@ -5,10 +5,14 @@
   "width": "container",
   "height": 400,
   "config": {
-    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"labelLimit": 0},
-    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0},
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 50},
+    "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0, "orient": "bottom", "layout": {"bottom": {"anchor": "middle"}},"symbolStrokeWidth":40},
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
-    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20}
+    "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20,"color": "white"},"background": "#101010",
+    "view": {"stroke": "transparent"},
+    "axisX": {"gridWidth": 0.2},
+    "axisY": {"gridWidth": 0.2},
+    "style": {"guide-label": {"fill": "white"}, "guide-title": {"fill": "white"}}
   },
   "data": {
     "values": [
@@ -20,7 +24,7 @@
       {"category": "United States", "value": 14.02}
     ]
   },
-  "layer": [{"mark": {"type": "arc", "innerRadius":120, "stroke": "#fff"}}],
+  "layer": [{"mark": {"type": "arc", "innerRadius":120}}],
   "encoding": {
     "theta": {"field": "value", "type": "quantitative", "stack": true},
     "color": {
