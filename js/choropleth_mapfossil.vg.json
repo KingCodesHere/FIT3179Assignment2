@@ -1,8 +1,6 @@
 {   
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {"text":"Electricity production of countries from fossil fuels ",
-    "color":"#092215",
-    "fontSize":19},
+    "title": "Electricity production of countries from fossil fuels, 2015 ",
     "width": "container",
     "height": 500,
     "config": {

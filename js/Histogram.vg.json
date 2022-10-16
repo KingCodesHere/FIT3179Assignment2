@@ -12,7 +12,7 @@
       "axisY": {"gridWidth": 0.2},
       "style": {"guide-label": {"fill": "white"}, "guide-title": {"fill": "white"}}
     },
-
+    "title":"Average temperature of the globe",
   "mark": "bar",
   "encoding": {
       "x": {

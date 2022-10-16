@@ -9,6 +9,7 @@
     "header": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":20,"titleFontSize":15},
     "title": {"font": "sans-serif", "subtitleFont": "sans-serif","fontSize":20,"color": "white"},"background": "#101010",
     "view": {"stroke": "transparent"},
+    "text":{"color":"white"},
     "axisX": {"gridWidth": 0.2},
     "axisY": {"gridWidth": 0.2},
     "style": {"guide-label": {"fill": "white"}, "guide-title": {"fill": "white"}}
@@ -32,7 +33,7 @@
   {
     "width": "container",
     "height": 500,
-    "title": "CO2 emissions (kt)",
+    "title": "CO2 emissions (kt), 1990-2019",
     "projection": {"type": "equalEarth"},
     "layer": [
             {
