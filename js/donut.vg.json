@@ -3,7 +3,7 @@
   "description": "A simple radial chart with embedded data.",
   "title": {"text": "CO2 Emssion Contribution "},
   "width": "container",
-  "height": 400,
+  "height": 200,
   "config": {
     "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":13,"minExtent": 50},
     "legend": {"labelFont": "sans-serif", "titleFont": "sans-serif","labelFontSize":12,"titleFontSize":12,"labelLimit": 0, "orient": "bottom", "layout": {"bottom": {"anchor": "middle"}},"symbolStrokeWidth":40},
@@ -24,7 +24,7 @@
       {"category": "United States", "value": 14.02}
     ]
   },
-  "layer": [{"mark": {"type": "arc", "innerRadius":120}}],
+  "layer": [{"mark": {"type": "arc", "innerRadius":50}}],
   "encoding": {
     "theta": {"field": "value", "type": "quantitative", "stack": true},
     "color": {
